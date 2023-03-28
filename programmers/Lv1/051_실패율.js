@@ -17,11 +17,17 @@ function solution(N, stages) {
         failRates.push([j, failRate]);
     }
 
+    // failRates.sort((a, b) => {
+    //     const diff = b[1] - a[1];
+    //     if (diff > 0) return 1;
+    //     if (diff < 0) return -1;
+    //     if (diff === 0) return a[0] - b[0];
+    // });
+
+    // 위의 정렬 코드 리팩토링
     failRates.sort((a, b) => {
-        const diff = b[1] - a[1];
-        if (diff > 0) return 1;
-        if (diff < 0) return -1;
-        if (diff === 0) return a[0] - b[0];
+        if (a[1] === b[1]) return a[0] - b[0];
+        return b[1] - a[1];
     });
 
     return failRates.map(e => e[0]);
