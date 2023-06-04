@@ -10,6 +10,7 @@
 </li>
 </ul>
 </details>
+
 <details>
 <summary>Sliding Window</summary>
 <ul>
@@ -19,22 +20,23 @@
 <li>
   <a href="https://github.com/SEMINSEMINSEMIN/algorithm/tree/main/baekjoon/silver/21921">21921번</a>
 </li>
-  
 </ul>
 </details>
+
 <details>
 <summary>Divide and Conquer</summary>
 <ul>
 <li>
-  <a href="/">4779번</a>
+  <a href="https://github.com/SEMINSEMINSEMIN/algorithm/tree/main/baekjoon/silver/4779">4779번</a>
  </li>
 </ul>
 </details>
+
 <details>
 <summary>Recursion</summary>
 <ul>
 <li>
-  <a href="/">4779번</a>
+  <a href="https://github.com/SEMINSEMINSEMIN/algorithm/tree/main/baekjoon/silver/4779">4779번</a>
  </li>
 </ul>
 </details>
