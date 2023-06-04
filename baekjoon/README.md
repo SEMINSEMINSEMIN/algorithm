@@ -1,6 +1,5 @@
 # 못푼 문제
 * 2003 (내 풀이가 왜 틀렸는지 모르겠음)
-* 1992 (StackSizeExceeded)
 
 # 유형
 <details>
@@ -40,7 +39,7 @@
   <a href="https://github.com/SEMINSEMINSEMIN/algorithm/tree/main/baekjoon/silver/4779">4779번</a>
  </li>
  <li>
-  <a href="/">1992번</a>
+  <a href="https://github.com/SEMINSEMINSEMIN/algorithm/tree/main/baekjoon/silver/1992">1992번</a>
  </li>
 </ul>
 </details>

@@ -1,17 +1,11 @@
-// 내 풀이:
-// StackSizeExceeded 문제가 있었음 -> 해결함
-// 근데 코드가 너무 긴듯..
+# 기존 코드
+
+```js
 let fs = require("fs");
-let input =  require("fs").readFileSync("/dev/stdin").toString().trim().split("\n");
-let [N, ...data] = input;
-N = +N;
+let input = process.platform === "linux" ? "dev.stdin" : fs.readFileSync(__dirname + "/example.txt").toString().trim().split("\n");
+const [N, ...data] = input;
 
 function solve(data, N) {
-  if (N === 1) {
-    console.log(data[0]);
-    return;
-  }
-
   let compressed = "";
 
   function helper(data, N) {
@@ -69,37 +63,25 @@ function solve(data, N) {
 }
 
 solve(data, N);
+```
+```
+input:
+1
+1
 
-// 통과되는 풀이
-// let fs = require("fs");
-// let input = require("fs").readFileSync("/dev/stdin").toString().trim().split("\n");
-
-// const N = Number(input[0]);
-// const nums = input.slice(1).map((v) => v.split("").map(Number));
-
-// const quadTree = [];
-
-// function recursion(n, x, y) {
-//   let total = 0;
-
-//   for (let i = 0; i < n; i++) {
-//     for (let j = 0; j < n; j++) {
-//       total += nums[y + j][x + i];
-//     }
-//   }
-
-//   if (total === 0) quadTree.push(0);
-//   else if (total === n * n) quadTree.push(1);
-//   else {
-//     n /= 2;
-//     quadTree.push("(");
-//     recursion(n, x, y);
-//     recursion(n, x + n, y);
-//     recursion(n, x, y + n);
-//     recursion(n, x + n, y + n);
-//     quadTree.push(")");
-//   }
-// }
-
-// recursion(N, 0, 0);
-// console.log(quadTree.join(""));
+expected:
+1
+```
+이 코드를 실행시 <pre>Maxiumum call stack size exceeded</pre> 에러가 떴다.<br>
+이유는 N = 1 일 때 처리를 해주지 않았기 때문이다.
+# 해결 방법
+```js
+if (N === 1) {
+  console.log(data[0]);
+  return;
+}
+```
+종료 조건에 N이 1인 경우 추가
+# 배운 점
+input의 범위가 어떻게 되는지 항상 확인.<br>
+문제를 제대로 안 읽어서 2부터 시작하는 거만 생각함
