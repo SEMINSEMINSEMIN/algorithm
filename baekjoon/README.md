@@ -18,3 +18,19 @@
  </li>
 </ul>
 </details>
+<details>
+<summary>Divide and Conquer</summary>
+<ul>
+<li>
+  <a href="/">4779번</a>
+ </li>
+</ul>
+</details>
+<details>
+<summary>Recursion</summary>
+<ul>
+<li>
+  <a href="/">4779번</a>
+ </li>
+</ul>
+</details>
