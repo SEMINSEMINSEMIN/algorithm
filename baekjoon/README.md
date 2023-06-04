@@ -15,7 +15,11 @@
 <ul>
 <li>
   <a href="https://github.com/SEMINSEMINSEMIN/algorithm/tree/main/baekjoon/silver/2559">2559번</a>
- </li>
+</li>
+<li>
+  <a href="https://github.com/SEMINSEMINSEMIN/algorithm/tree/main/baekjoon/silver/21921">21921번</a>
+</li>
+  
 </ul>
 </details>
 <details>
