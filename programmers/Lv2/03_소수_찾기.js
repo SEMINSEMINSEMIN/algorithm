@@ -1,4 +1,5 @@
-function isPrime(num) {
+// https://seminkang.notion.site/aee113ad033a4afe954bc3c7a17571db?pvs=4
+function isPrime(num) { 
   if (num <= 1) return false;
 
   if (num === 2) return true;
