@@ -23,7 +23,7 @@ function solution(brown, yellow) {
   for (const e of yellowCases) {
     const [width, height] = e;
     const brownWidth = getBrownWidth(width);
-    const brownHeight = getBrownWidth(height);
+    const brownHeight = getBrownHeight(height);
     const brownTotal = getBrownTotal(brownWidth, brownHeight);
 
     if (brownTotal === brown) return [brownWidth, brownHeight];
